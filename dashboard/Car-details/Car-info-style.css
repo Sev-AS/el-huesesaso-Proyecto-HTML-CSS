@@ -157,39 +157,3 @@ body {
 .user-menu:hover .dropdown {
   display: block;
 }
-
-.logo-bar-wrapper {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 1650px;
-  margin: 30px 0px;
-  position: relative;
-}
-
-.logo-bar {
-  will-change: transform;
-  display: inline-flex;
-  animation: scrollRight 20s linear infinite;
-}
-
-.logo-bar img {
-  height: 180px;
-  width: 300px;
-  margin: 0 60px;
-  object-fit: contain;
-  vertical-align: right;
-  transition: transform 0,1s ease;
-}
-
-.logo-bar-wrapper:hover .logo-bar {
-  animation-play-state: paused;
-}
-
-@keyframes scrollRight {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
