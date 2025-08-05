@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #dfdfdf;
+  height: 950px;
+  padding: 20px 20px 0px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  color: #0c0909;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sidebar .bottom {
+  position: absolute;
+  bottom: 20px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px 10px ;
+  background-color: #ffffff;
+}
+
+.brands img {
+  height: 60px;
+  margin-right: 20px;
+}
+
+.cars {
+  display: grid;
+  grid-template-columns: repeat(3, 540px);
+  gap: 20px;
+}
+
+.car {
+  background: rgb(214, 214, 214);
+  border-radius: 11px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.car:hover {
+  transform: translateY(-5px);
+}
+
+.car img {
+  text-align: center;
+  height: auto;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 15px;
+  margin: 5px 0;
+  color: #333;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #000000;
+  color: white;
+  box-shadow: 0 4px 10px rgba(108, 99, 255, 0.3);
+  transform: translateX(5px);
+}
+
+.topbar {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 40px;
+}
+
+.search-bar {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: #000000;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.2);
+}
+
+.user-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.user-icon:hover {
+  transform: scale(1.1);
+}
+
+.user-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 45px;
+  background-color: white;
+  border: 1px solid #030303;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  min-width: 160px;
+  z-index: 10;
+}
+
+.dropdown a {
+  display: block;
+  padding: 12px 15px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 1px solid #000000;
+}
+
+.dropdown a:hover {
+  background-color: #d8d6d6;
+}
+
+.user-menu:hover .dropdown {
+  display: block;
+}
+
+.logo-bar-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1650px;
+  margin: 22px 0px;
+  position: relative;
+}
+
+.logo-bar {
+  will-change: transform;
+  display: inline-flex;
+  animation: scrollRight 20s linear infinite;
+}
+
+.logo-bar img {
+  height: 180px;
+  width: 300px;
+  margin: 0 60px;
+  object-fit: contain;
+  vertical-align: right;
+  transition: transform 0,1s ease;
+}
+
+.logo-bar-wrapper:hover .logo-bar {
+  animation-play-state: paused;
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
