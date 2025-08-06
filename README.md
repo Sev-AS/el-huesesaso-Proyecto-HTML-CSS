@@ -20,34 +20,7 @@ Desarrollar una interfaz visual limpia, responsive y bien estructurada, utilizan
 ---
 
 ## Estructura del Proyecto
-
-el-huesesaso-Proyecto-HTML-CSS/
-│
-├── dashboard/
-│ ├── el-huesesaso-dashboard.html Página principal (dashboard)
-│ ├── login/
-│ │ └── login.html Página de inicio de sesión
-│ ├── Car-details/
-│ │ ├── bmw/
-│ │ │ └── bmw.html Página de BMW
-│ │ ├── porsche/
-│ │ │ └── porsche.html Página de Porsche
-│ │ ├── lamborghini/
-│ │ │ ├── lamborghini.html
-│ │ │ ├── revuelto-details.html
-│ │ │ └── temerario-details.html
-│ │ ├── mercedes/
-│ │ │ ├── mercedes.html
-│ │ │ └── amg-gt-details.html
-│ ├── about.html Sección de información general
-│ ├── services.html Página de servicios ofrecidos
-│ ├── settings.html Página de configuración
-│ ├── vehicles.html Vista general de vehículos
-│
-├── style.css Estilos generales del dashboard
-├── login-style.css Estilo exclusivo para login
-├── cars-details.css Estilo para las secciones de vehículos
-└── [README.md](http://readme.md/) Documento explicativo
+<img width="551" height="612" alt="image" src="https://github.com/user-attachments/assets/089c695c-645e-40da-83ee-efe856fe2605" />
 
 ---
 
