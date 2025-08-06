@@ -1,27 +1,71 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lamborghini - El Huesesaso</title>
-  <link rel="stylesheet" href="../style.css">
+  <title>Lamborghini Vehicles - El Huesesaso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../cars-details.css">
 </head>
 <body>
-  <main class="content">
-    <div class="topbar">
-      <h1>Lamborghini</h1>
+
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">☰</label>
+
+
+  <aside class="sidebar">
+    <h2 class="logo">El Huesesaso</h2>
+    <nav>
+      <ul>
+       <li><a href="../../el-huesesaso-dashboard.html">Dashboard</a></li>
+        <li><a href="../../vehicles.html">Vehicles</a></li>
+        <li><a href="../../https://shattereddisk.github.io/rickroll/rickroll.mp4">Booking</a></li>
+        <li><a href="../../services.html">Services</a></li>
+        <li><a href="../../about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="bottom">
+      <a href="#settings">Settings</a>
     </div>
-    <section class="cars">
-      <div class="car">
-        <img src="../../assets/Lamborghini-Revuelto.png" alt="Lamborghini Revuelto">
-        <h3>Lamborghini Revuelto</h3>
-        <p>Motor V12 híbrido, 1001 hp</p>
+  </aside>
+
+  
+  <main class="content">
+
+    <div class="topbar">
+      <input type="text" class="search-bar" placeholder="Search Lamborghini vehicles...">
+      <div class="user-menu">
+        <img src="../../assets/user.jpg" alt="User Profile" class="user-icon">
+        <div class="dropdown">
+          <a href="../../login/login.html">My Account</a>
+          <a href="../../settings.html">Profile</a>
+          <a href="../../login/login.html">Log Out</a>
+        </div>
       </div>
-      <div class="car">
-        <img src="../../assets/Lamborghini-Temerario.png" alt="Lamborghini Temerario">
-        <h3>Lamborghini Temerario</h3>
-        <p>Diseño extremo, potencia brutal</p>
+    </div>
+
+
+    <div class="car-details">
+      <h1>Lamborghini Performance Vehicles</h1>
+      
+      <div class="cars">
+        <div class="car">
+          <p>98% Recommend</p>
+          <a href="revuelto-details.html"><img src="../../assets/Lamborghini-Revuelto.png" alt="Lamborghini Revuelto"></a>
+          <h3>Lamborghini Revuelto</h3>
+          <p>The Lamborghini Revuelto is the first HPEV (High Performance Electrified Vehicle) hybrid super sports car. With its iconic V12 engine and electric motors, it delivers over 1000 horsepower, offering breathtaking performance and a new dimension of driving pleasure. The Revuelto combines tradition with innovation, setting a new benchmark in the world of supercars.</p>
+        </div>
+        
+        <div class="car">
+          <p>97% Recommend</p>
+          <a href="temerario-details.html"><img src="../../assets/Lamborghini-Temerario.png" alt="Lamborghini Temerario"></a>
+          <h3>Lamborghini Temerario</h3>
+          <p>The Lamborghini Temerario is a concept that embodies the future of the brand. It features a bold design, advanced aerodynamics, and a hybrid powertrain that pushes the boundaries of performance. The Temerario is a statement of intent, showcasing Lamborghini's commitment to creating the most exciting and innovative super sports cars in the world.</p>
+        </div>
       </div>
-    </section>
+    </div>
   </main>
 </body>
 </html>

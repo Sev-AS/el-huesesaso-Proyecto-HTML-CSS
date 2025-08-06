@@ -1,5 +1,5 @@
 /* Import main styles */
-@import url('../../style.css');
+@import url('../style.css');
 
 /* ===== CAR DETAILS SPECIFIC STYLES ===== */
 .car-details {
@@ -8,13 +8,58 @@
   padding: 0 2rem;
 }
 
-.car-details h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  text-align: center;
+/* Breadcrumb Navigation */
+.breadcrumb {
   margin-bottom: 2rem;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.breadcrumb a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.breadcrumb a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* Recommended Vehicles Title */
+.recommended-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 40px 0;
+  color: #333;
   position: relative;
+  padding-bottom: 10px;
+}
+
+.recommended-title::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background-color: #f39c12;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.car-details h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    position: relative;
 }
 
 .car-details h1::after {
@@ -30,6 +75,7 @@
 }
 
 .car-details .cars {
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2.5rem;
 }
@@ -90,6 +136,15 @@
   letter-spacing: 0.5px;
 }
 
+.car-details .car h2 {
+  color: var(--text-primary);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
 .car-details .car h3 {
   color: var(--text-primary);
   font-size: 1.5rem;
@@ -103,6 +158,29 @@
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 0;
+}
+
+.car-details .car ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.car-details .car li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.car-details .car li:last-child {
+  border-bottom: none;
+}
+
+.car-details .car li strong {
+  color: var(--text-primary);
+  font-weight: 600;
 }
 
 /* ===== RESPONSIVE DESIGN FOR CAR DETAILS ===== */
@@ -132,6 +210,11 @@
 @media (max-width: 768px) {
   .car-details {
     padding: 0 1rem;
+  }
+  
+  .breadcrumb {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
   }
   
   .car-details h1 {
@@ -176,5 +259,10 @@
   
   .car-details .car h3 {
     font-size: 1.125rem;
+  }
+  
+  .car-details .car li {
+    font-size: 0.875rem;
+    padding: 0.4rem 0;
   }
 }

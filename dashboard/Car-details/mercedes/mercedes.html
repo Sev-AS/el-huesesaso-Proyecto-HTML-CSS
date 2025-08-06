@@ -3,21 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mercedes-Benz - El Huesesaso</title>
-  <link rel="stylesheet" href="../style.css">
+  <title>Mercedes-Benz Vehicles - El Huesesaso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../cars-details.css">
 </head>
 <body>
-  <main class="content">
-    <div class="topbar">
-      <h1>Mercedes-Benz</h1>
+
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">☰</label>
+
+
+  <aside class="sidebar">
+    <h2 class="logo">El Huesesaso</h2>
+    <nav>
+      <ul>
+        <li><a href="../../el-huesesaso-dashboard.html">Dashboard</a></li>
+        <li><a href="../../vehicles.html">Vehicles</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="../../services.html">Services</a></li>
+        <li><a href="../../about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="bottom">
+      <a href="#settings">Settings</a>
     </div>
-    <section class="cars">
-      <div class="car">
-        <img src="../assets/imagen-de-Mercedes-benz-amg-gt" alt="Mercedes-Benz AMG GT">
-        <h3>Mercedes-Benz AMG GT</h3>
-        <p>Deportivo alemán de lujo</p>
+  </aside>
+
+  
+  <main class="content">
+
+    <div class="topbar">
+      <input type="text" class="search-bar" placeholder="Search Mercedes-Benz vehicles...">
+      <div class="user-menu">
+        <img src="../../assets/user.jpg" alt="User Profile" class="user-icon">
+        <div class="dropdown">
+          <a href="../../login/login.html">My Account</a>
+          <a href="#profile">Profile</a>
+          <a href="#logout">Log Out</a>
+        </div>
       </div>
-    </section>
+    </div>
+
+
+    <div class="car-details">
+      <h1>Mercedes-Benz Performance Vehicles</h1>
+      
+      <div class="cars">
+        <div class="car">
+          <p>96% Recommend</p>
+          <a href="amg-gt-details.html"><img src="../../assets/Mercedes-benz-amg-gt.png" alt="Mercedes-AMG GT"></a>
+          <h3>Mercedes-AMG GT</h3>
+          <p>The Mercedes-AMG GT is a high-performance sports car that combines stunning design with incredible power. It features a handcrafted 4.0L V8 biturbo engine, delivering exhilarating performance and a distinctive sound. The AMG GT is a masterpiece of engineering, offering a driving experience that is both thrilling and luxurious.</p>
+        </div>
+      </div>
+    </div>
   </main>
 </body>
 </html>
